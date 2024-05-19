@@ -5,8 +5,8 @@ function AddProduct() {
     const context = useContext(myContext);
     const { products, setProducts, addProduct } = context;
     return (
-        <div>
-            <div className='flex justify-center items-center h-screen'>
+        <div >
+            <div className='flex justify-center items-center h-screen bg-gradient-to-t from-blue-400'>
                 <div className=' bg-gray-800 px-10 py-10 rounded-xl '>
                     <div className="">
                         <h1 className='text-center text-white text-xl mb-4 font-bold'>Add Product</h1>

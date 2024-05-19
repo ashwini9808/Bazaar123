@@ -9,7 +9,7 @@ function Dashboard() {
     const { mode , order, user,product} = context
   return (
     <Layout>
-        <section className="text-gray-600 body-font mt-10 mb-10">
+        <section className="text-gray-600 body-font mt-10 -mb-16 bg-gradient-to-t from-blue-400">
             <div className="container px-5 mx-auto mb-10">
                 <div className="flex flex-wrap -m-4 text-center">
                     <div className="p-4 md:w-1/3 sm:w-full">

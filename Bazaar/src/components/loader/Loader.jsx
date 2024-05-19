@@ -6,7 +6,7 @@ function Layout({children}) {
   return (
     <div>
         <Navbar/>
-        <div className="content">
+        <div className="content bg-gradient-to-r  from-blue-400 -z-50">
             {children}
         </div>
         <Footer/>

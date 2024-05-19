@@ -12,7 +12,7 @@ function Order() {
       {loading && <Loader />}
       {order.length > 0 ?
         (<>
-          <div className=" h-full pt-10">
+          <div className=" h-full pt-10 bg-gradient-to-r  from-blue-400 -z-50">
             {
               order.filter(obj => obj.userid == userid).map((order) => {
                 // order.cartItems.map()

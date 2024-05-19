@@ -5,6 +5,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../fireabase/FirebaseConfig';
 import { toast } from 'react-toastify';
 import Loader from '../../components/loader/Loader';
+import shape3 from '../../assets/shapes3.webp'
 
 function Login() {
     const context = useContext(myContext)
@@ -41,7 +42,10 @@ function Login() {
     }
    
     return (
-        <div className=' flex justify-center items-center m-9'>
+        <div className=' flex justify-center items-center m-9 bg-gradient-to-r  from-blue-400  shadow'>
+            <div className="animate-bounce  top-[85rem] right-[1rem]">
+          <img src={shape3} alt="img" />
+        </div>
             {loading && <Loader/>}
             <div className=' bg-gray-300 px-20 py-20 rounded-xl border-gray-500 border-2 shadow-lg'>
                 <div className="">
@@ -83,6 +87,9 @@ function Login() {
                     <h2 className='text-black'>Don't have an account <Link className=' text-yellow-500 font-bold' to={'/signup'}>Signup</Link></h2>
                 </div>
             </div>
+            <div className="animate-bounce z-10 top-[85rem] right-[1rem] ">
+          <img src={shape3} alt="img" />
+        </div>
         </div>
     )
 }
